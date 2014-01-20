@@ -48,6 +48,7 @@
 @import url("./../sites/all/themes/custom/css/jqm-demos.css?mzm6ms");
 @import url("./../sites/all/themes/custom/css/custom.css?mzm6ms");
 @import url("./../sites/all/themes/custom/css/jquery.mobile-1.4.0.min.css?mzm6ms");</style>
+<style>@import url("./../sites/all/themes/omega/omega/css/layouts/simple/simple.layout.css?mzm6ms");</style>
  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")</script>
 <script src="./../misc/jquery.once.js?v=1.2"></script>
@@ -55,11 +56,19 @@
 <script src="./../sites/all/themes/omega/omega/js/no-js.js?mzm6ms"></script>
 
 <!--[if (gte IE 6)&(lte IE 8)]>
-<script src="./../sites/all/libraries/html5shiv/html5shiv.min.js?mzm6ms"></script>
+<script src="./../sites/all/libraries/html5shiv/html5shiv.js?mzm6ms"></script>
 <![endif]-->
 
 <!--[if (gte IE 6)&(lte IE 8)]>
-<script src="./../sites/all/libraries/html5shiv/html5shiv-printshiv.min.js?mzm6ms"></script>
+<script src="./../sites/all/libraries/html5shiv/html5shiv-printshiv.js?mzm6ms"></script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="./../sites/all/libraries/selectivizr/selectivizr.js?mzm6ms"></script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="./../sites/all/libraries/respond/respond.js?mzm6ms"></script>
 <![endif]-->
 <script src="./../sites/all/themes/custom/js/custom.js?mzm6ms"></script>
 <script src="./../sites/all/themes/custom/js/jquery.js?mzm6ms"></script>
@@ -71,42 +80,25 @@
 	</head>
 	<body class="html not-front not-logged-in page-node page-node- page-node-2 node-type-poll section-poll"  class="html not-front not-logged-in page-node page-node- page-node-2 node-type-poll section-poll" onload="drupalgap_onload();">
 		<div id="skip-link"> <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a> </div>
-		 <div data-role="page" class="jqm-demos jqm-panel-page" data-quicklinks="true"    >
-<div>
-   <div>
-      <!-- leftpanel2  -->
-      <div data-role="panel" id="leftpanel2" data-position="left" data-display="push" data-theme="a"          >
-         <div id="sidebar" class="ui-panel-inner">
-                        <a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-carat-l ui-btn-icon-right ui-btn-icon-notext ui-btn-inline">Close panel</a>
-                     </div>
-         <div id="content">
-                                                <ul class="action-links jqm-list ui-alt-icon ui-nodisc-icon ui-listview">
-                           </ul>
-                     </div>
-      </div>
-      <!-- /leftpanel2 -->
-      <!-- rightpanel2  -->
-      <div data-role="panel" id="rightpanel2" data-position="right" data-display="push" data-theme="a" >
-                  <ul class="jqm-list ui-listview ui-group-theme-a" data-icon="false" data-divider-theme="a" data-theme="a" data-inset="false" data-role="listview">
-                                 </ul>
-         <a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-carat-r ui-btn-icon-right ui-btn-icon-notext ui-btn-inline ">Close panel</a>
-      </div>
-      <!-- /rightpanel2 -->
-      <!-- Note: all other panels are at the end of the page, scroll down  -->
-      <div id="header" data-role="header">
-                  <h1 class="ui-title" role="heading" aria-level="1"><img src="http://m.reisandirvys.com/sites/default/files/images/rni-logo-splash.png" alt="Reis and Irvys" width="140"></h1>
-         <a class="ui-btn-left ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-inline" href="#leftpanel2" data-role="button" role="button">Left Icon</a>
+		 <div class="l-page has-two-sidebars has-sidebar-first has-sidebar-second">
+  <header class="l-header" role="banner">
+    <div class="l-branding">
+              <a href="index.html" title="Home" rel="home" class="site-logo"><img src="./../sites/all/themes/custom/logo.png" alt="Home" /></a>
+      
+                        <h1 class="site-name">
+            <a href="index.html" title="Home" rel="home"><span>Reis n Irvy's Mobile</span></a>
+          </h1>
         
-         <a class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-inline"  href="index.html"  rel="home"data-role="button" role="button" title="Home" alt="Home">Home</a>
-         <a class="ui-btn-right ui-btn ui-icon-gear ui-btn-icon-notext ui-btn-inline" href="#rightpanel2" data-role="button" role="button">Right Icon</a>
-      </div>
-      <!-- /header -->
-      <div role="main" class="ui-content" id="content">
-         <div></div>
-                  <div>
-                                    <h1>What is your favorite yogurt flavor?</h1>
-                                                <ul class="action-links"></ul>
-                        <article about="./../poll/011914.html" typeof="sioc:Post sioct:Poll" role="article" class="node node--poll node--promoted node--full node--poll--full">
+              
+          </div>
+
+          </header>
+
+  <div class="l-main">
+    <div class="l-content" role="main">
+            <h2 class="element-invisible">You are here</h2><ul class="breadcrumb"><li><a href="./../index.html">Home</a></li></ul>      <a id="main-content"></a>
+                    <h1>What is your favorite yogurt flavor?</h1>
+                                          <article about="./../poll/011914.html" typeof="sioc:Post sioct:Poll" role="article" class="node node--poll node--promoted node--full node--poll--full">
   
   
   <div class="node__content">
@@ -156,16 +148,36 @@
 </div>
 <ul><li><a href="/user/register" title="Create a new user account.">Create new account</a></li>
 <li><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
-</ul><input type="hidden" name="form_build_id" value="form-vRwDVIAHyPw8OLDDhygbfGEMR6NhMtjQgavDfLsPrAs" />
+</ul><input type="hidden" name="form_build_id" value="form-9OQTkf48kmVtjJGW3Q9sb6blIMgNw1lThBjc7zXSyfA" />
 <input type="hidden" name="form_id" value="user_login_block" />
 <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></form>  </div>
 </div>
-                                 </div>
-               </div>
-      <!-- /content -->
-   </div>
-   <!-- /page -->
-</div> <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+<div id="block-comment-recent" role="navigation" class="block block--comment block--comment-recent">
+        <h2 class="block__title">Recent comments</h2>
+      <div class="block__content">
+    No comments available.  </div>
+</div>
+          </div>
+
+      <aside class="l-region l-region--sidebar-first">
+    <nav id="block-system-main-menu" role="navigation" class="block block--system block--menu block--system-main-menu">
+      
+  <ul class="menu-subnavigation"><li class="first leaf"><a href="./../index.html">Home</a></li>
+<li class="last leaf active-trail"><a href="./../poll/011914.html" class="active-trail active">What is your favorite yogurt flavor?</a></li>
+</ul></nav>
+  </aside>
+      <aside class="l-region l-region--sidebar-second">
+    <nav id="block-system-navigation" role="navigation" class="block block--system block--menu block--system-navigation">
+      
+  <ul class="menu"><li class="first last leaf"><a href="/frontpage">Home</a></li>
+</ul></nav>
+  </aside>
+  </div>
+
+  <footer class="l-footer" role="contentinfo">
+      </footer>
+</div>
+ <script src="http://localhost:35729/livereload.js?snipver=1"></script>
  
 	</body>
 </html>
