@@ -1,0 +1,42 @@
+.jqm-demos .jqm-header h2 img {
+    height: auto !important;
+    width: 150px !important;
+	display:block;
+}
+
+form#user-login-form.user-login-form div ul li {
+	list-style-type:none !important;
+    
+}
+
+div ul li a.ui-link {
+	font-family: 'Open Sans',sans-serif !important;
+    font-weight: 300;
+	text-decoration:none !important;
+}
+
+div#content.ui-content h1 {
+	font-family: 'Open Sans',sans-serif !important;
+    font-weight: 300;
+	text-decoration:none !important;
+	font-size:2.4em;
+}
+
+h2.block__title {
+	display:none;
+}
+
+/*.ui-icon-loading {
+    background: url('/images/ajax-loader.gif') repeat scroll 0 0 / 2.875em 2.875em rgba(0, 0, 0, 0) !important;
+}
+*/
+
+/*.poll-bars__bar .foreground {
+    background-color: none !important;
+    float: left;
+    height: 1em;
+}*/
+
+body.not-logged-in .node--poll {
+	display:none !important;
+}
